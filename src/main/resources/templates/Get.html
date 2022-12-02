@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get</title>
+</head>
+<body>
+<p th:text="'Калькулятор'"/>
+<p th:text="'Введите значения и выберите действия'" />
+<form method="get" action="/Get">
+    <input type="first" name="first" id="first"/><br> <br>
+    <select name="Znak" id="Znak">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select><br> <br>
+    <input type="second" name="second" id="second"/><br> <br>
+    <input  type="submit" value="Итог"/>
+</form>
+<p th:text="'Результат:'+ ${znaki} " />
+<a href="/">Назад </a>
+</body>
+</html>
